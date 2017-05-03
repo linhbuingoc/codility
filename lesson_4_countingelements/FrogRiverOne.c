@@ -1,3 +1,4 @@
+// https://codility.com/demo/results/training4K8WCW-EBB/
 int FrogRiverOne(int X, int A[], int N) 
 {
     int *map = calloc(1+X, sizeof(int));
