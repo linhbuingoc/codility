@@ -39,6 +39,8 @@ int MinAvgTwoSlice(int A[], int N)
         }
     }
     
+    free(P);
+    
     /* select s2 or s3 */
     if (2*ms3 < 3*ms2)
     {
