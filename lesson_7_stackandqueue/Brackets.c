@@ -31,18 +31,18 @@ int Brackets(char *S)
             /* Empty stack */
             if (top == 0)
             {
-                /* Make the stack appear to be not empty so the function return false */
+                /* Make the stack appears to be not empty so the function returns false */
                 top = 1;
                 break;
             }
             
-            /* Does o=top stack matches with S[i] */
+            /* Does top element of stack matches S[i] */
             --top;
             if (!(((stk[top] == '[') && (S[i] == ']')) ||
                   ((stk[top] == '{') && (S[i] == '}')) ||
                   ((stk[top] == '(') && (S[i] == ')'))))
             {
-                /* Make the stack appear to be not empty so the function return false */
+                /* Make the stack appears to be not empty so the function returns false */
                 top = 1;
                 break;
             }
